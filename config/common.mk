@@ -195,6 +195,11 @@ endif
 # Plugins
 include packages/apps/Plugins/plugins.mk
 
+# Navbar
+PRODUCT_PACKAGES += \
+    GesturalNavigationOverlayLong \
+    GesturalNavigationOverlayMedium
+
 # Face Unlock
 #TARGET_FACE_UNLOCK_SUPPORTED ?= true
 #ifneq ($(TARGET_GAPPS_ARCH),arm64)
