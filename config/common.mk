@@ -198,7 +198,8 @@ include packages/apps/Plugins/plugins.mk
 # Navbar
 PRODUCT_PACKAGES += \
     GesturalNavigationOverlayLong \
-    GesturalNavigationOverlayMedium
+    GesturalNavigationOverlayMedium \
+    GesturalNavigationOverlayHidden
 
 # Face Unlock
 #TARGET_FACE_UNLOCK_SUPPORTED ?= true
