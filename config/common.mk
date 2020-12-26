@@ -33,7 +33,8 @@ endif
 # Some permissions
 PRODUCT_COPY_FILES += \
     vendor/aosp/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
-    vendor/aosp/config/permissions/privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-lineagehw.xml
+    vendor/aosp/config/permissions/privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-lineagehw.xml \
+    vendor/aosp/config/permissions/privapp-permissions-nezuko.xml:system/etc/permissions/privapp-permissions-nezuko.xml
 
 # Copy all custom init rc files
 $(foreach f,$(wildcard vendor/aosp/prebuilt/common/etc/init/*.rc),\
@@ -97,6 +98,11 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/aosp/overlay/common \
     vendor/aosp/overlay-pixel/common
+
+
+# OmniStyle
+PRODUCT_PACKAGES += \
+    OmniStyle
 
 # TouchGestures
 PRODUCT_PACKAGES += \
@@ -174,6 +180,9 @@ ifeq ($(TARGET_INCLUDE_LIVE_WALLPAPERS),true)
 PRODUCT_PACKAGES += \
     PixelLiveWallpapersOverlay
 endif
+
+# Plugins
+include packages/apps/Plugins/plugins.mk
 
 # Face Unlock
 #TARGET_FACE_UNLOCK_SUPPORTED ?= true

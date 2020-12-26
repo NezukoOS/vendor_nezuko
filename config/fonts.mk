@@ -59,5 +59,10 @@ PRODUCT_PACKAGES += \
     Barlow-Bold.ttf \
     Barlow-Medium.ttf
 
+# Customisation Overlays
+PRODUCT_PACKAGES += \
+    FontGoogleSansOverlay \
+    FontGoogleSansGoogleSansOverlay \
+
 PRODUCT_COPY_FILES += \
     vendor/aosp/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
