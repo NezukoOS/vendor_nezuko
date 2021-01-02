@@ -2,6 +2,12 @@
 PRODUCT_PACKAGES += \
     ArbutusSlab-Regular.ttf
 
+# oneplus-slate family
+PRODUCT_PACKAGES += \
+    SlateForOnePlus-Book.ttf \
+    SlateForOnePlus-Regular.ttf \
+    SlateForOnePlus-Medium.ttf \
+
 # google-sans family
 PRODUCT_PACKAGES += \
     GoogleSans-BoldItalic.ttf \
@@ -62,6 +68,7 @@ PRODUCT_PACKAGES += \
 # Customisation Overlays
 PRODUCT_PACKAGES += \
     FontGoogleSansOverlay \
+    FontSlateForOnePlusOverlay \
     FontGoogleSansGoogleSansOverlay \
 
 PRODUCT_COPY_FILES += \
