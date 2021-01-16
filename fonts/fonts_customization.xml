@@ -20,6 +20,12 @@
       <font weight="700" style="italic">Lato-BoldItalic.ttf</font>
     </family>
     <alias name="lato-bold" to="lato" weight="700" />
+
+    <family customizationType="new-named-family" name="rosemary">
+      <font weight="300" style="normal">Rosemary-Regular.ttf</font>
+    </family>
+    <alias name="rosemary-semi-bold" to="rosemary" weight="600" />
+    <alias name="rosemary-bold" to="rosemary" weight="700" />
     
     <family customizationType="new-named-family" name="Slate">
         <font weight="300" style="normal">SlateForOnePlus-Book.ttf</font>

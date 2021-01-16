@@ -30,6 +30,10 @@ PRODUCT_PACKAGES += \
     Lato-Medium.ttf \
     Lato-Regular.ttf
 
+# Rosemary
+PRODUCT_PACKAGES += \
+    Rosemary-Regular.ttf
+
 # rubik family
 PRODUCT_PACKAGES += \
     Rubik-BoldItalic.ttf \
@@ -70,6 +74,7 @@ PRODUCT_PACKAGES += \
     FontGoogleSansOverlay \
     FontSlateForOnePlusOverlay \
     FontGoogleSansGoogleSansOverlay \
+    FontRosemarySourceOverlay
 
 PRODUCT_COPY_FILES += \
     vendor/aosp/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
