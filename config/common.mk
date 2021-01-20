@@ -208,6 +208,9 @@ $(call inherit-product, vendor/aosp/config/bootanimation.mk)
 # Fonts
 $(call inherit-product, vendor/aosp/config/fonts.mk)
 
+# Themes
+$(call inherit-product, vendor/themes/themes.mk)
+
 # GApps
 $(call inherit-product, vendor/gapps/config.mk)
 
