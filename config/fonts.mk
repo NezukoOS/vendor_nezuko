@@ -2,6 +2,10 @@
 PRODUCT_PACKAGES += \
     ArbutusSlab-Regular.ttf
 
+# Coolstory
+PRODUCT_PACKAGES += \
+    Coolstory-Regular.ttf
+
 # oneplus-slate family
 PRODUCT_PACKAGES += \
     SlateForOnePlus-Book.ttf \
@@ -71,6 +75,7 @@ PRODUCT_PACKAGES += \
 
 # Customisation Overlays
 PRODUCT_PACKAGES += \
+    FontCoolstoryOverlay \
     FontGoogleSansOverlay \
     FontSlateForOnePlusOverlay \
     FontGoogleSansGoogleSansOverlay \

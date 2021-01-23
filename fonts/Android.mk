@@ -34,6 +34,7 @@ $(eval include $(BUILD_PREBUILT))
 endef
 
 font_src_files := \
+    Coolstory-Regular.ttf \
     SlateForOnePlus-Book.ttf \
     SlateForOnePlus-Regular.ttf \
     SlateForOnePlus-Medium.ttf \
