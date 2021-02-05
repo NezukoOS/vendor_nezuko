@@ -111,9 +111,11 @@ PRODUCT_PACKAGES += \
     GVM-PGM-OPRD \
     GVM-PGM-PURP
 
-# OmniStyle
+# NezukoStuff
 PRODUCT_PACKAGES += \
-    OmniStyle
+    OmniStyle \
+    StitchImage \
+    StitchImageService
 
 # TouchGestures
 PRODUCT_PACKAGES += \
