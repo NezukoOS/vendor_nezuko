@@ -1,4 +1,8 @@
 PRODUCT_BRAND ?= PixelExperience
+PRODUCT_SIZE := full
+
+# Telephony
+IS_PHONE := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -29,7 +33,18 @@ else
 # Enable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
+# World APN list
+PRODUCT_PACKAGES += \
+    apns-conf.xml
 
+# Telephony packages
+PRODUCT_PACKAGES += \
+    Stk
+
+# Tethering - allow without requiring a provisioning app
+# (for devices that check this)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    net.tethering.noprovisioning=true
 # Some permissions
 PRODUCT_COPY_FILES += \
     vendor/aosp/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
