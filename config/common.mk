@@ -207,7 +207,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Pixel customization
 TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
 TARGET_INCLUDE_STOCK_ARCORE ?= true
-TARGET_INCLUDE_LIVE_WALLPAPERS ?= true
+TARGET_INCLUDE_LIVE_WALLPAPERS ?= false
 ifeq ($(TARGET_INCLUDE_LIVE_WALLPAPERS),true)
 PRODUCT_PACKAGES += \
     PixelLiveWallpapersOverlay
@@ -222,17 +222,11 @@ PRODUCT_PACKAGES += \
     GesturalNavigationOverlayMedium \
     GesturalNavigationOverlayHidden
 
-# Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED ?= true
-ifneq ($(TARGET_GAPPS_ARCH),arm64)
-TARGET_FACE_UNLOCK_SUPPORTED := false
-endif
-ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
 PRODUCT_PACKAGES += \
     FaceUnlockService
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
-endif
+
 
 # Apex
 $(call inherit-product, vendor/aosp/config/apex.mk)
