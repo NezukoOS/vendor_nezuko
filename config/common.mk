@@ -134,7 +134,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OmniStyle \
     StitchImage \
-    StitchImageService
+    StitchImageService \
+    ThemePicker \
+    NezukoThemesStub \
+    Launcher3
 
 # TouchGestures
 PRODUCT_PACKAGES += \
