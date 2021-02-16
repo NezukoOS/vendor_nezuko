@@ -37,6 +37,7 @@ CUSTOM_VERSION_PROP := eleven
 
 ADDITIONAL_BUILD_PROPERTIES += \
     org.nezuko.version=$(CUSTOM_VERSION_PROP) \
+    org.pixelexperience.version=$(CUSTOM_VERSION_PROP) \
     org.pixelexperience.version.display=$(CUSTOM_VERSION) \
     org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
     org.pixelexperience.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
