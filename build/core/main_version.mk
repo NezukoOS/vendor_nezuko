@@ -16,6 +16,8 @@ ADDITIONAL_BUILD_PROPERTIES += \
 endif
 
 # Branding
+NEZUKO_MAINTAINER ?= Unknown
+NEZUKO_VERSION := 1.0
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
 
 CUSTOM_DATE_YEAR := $(shell date -u +%Y)
@@ -30,12 +32,14 @@ CUSTOM_PLATFORM_VERSION := 11.0
 
 TARGET_PRODUCT_SHORT := $(subst aosp_,,$(CUSTOM_BUILD))
 
-CUSTOM_VERSION := Nezuko_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-BETA-$(CUSTOM_BUILD_TYPE)
+CUSTOM_VERSION := NEZUKO_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-BETA-$(CUSTOM_BUILD_TYPE)
 CUSTOM_VERSION_PROP := eleven
 
 ADDITIONAL_BUILD_PROPERTIES += \
-    org.pixelexperience.version=$(CUSTOM_VERSION_PROP) \
+    org.nezuko.version=$(CUSTOM_VERSION_PROP) \
     org.pixelexperience.version.display=$(CUSTOM_VERSION) \
     org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
     org.pixelexperience.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
+    org.nezuko.build_maintainer=$(NEZUKO_MAINTAINER) \
+    org.nezuko.version.prop=$(CUSTOM_PLATFORM_VERSION) \
     org.pixelexperience.build_type=$(CUSTOM_BUILD_TYPE)
