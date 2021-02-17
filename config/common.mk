@@ -137,7 +137,8 @@ PRODUCT_PACKAGES += \
     StitchImageService \
     ThemePicker \
     NezukoThemesStub \
-    Launcher3
+    Launcher3 \
+
 
 # TouchGestures
 PRODUCT_PACKAGES += \
@@ -165,6 +166,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.bs_theme=true \
     ro.com.google.ime.theme_id=5 \
     ro.com.google.ime.system_lm_dir=/product/usr/share/ime/google/d3_lms
+
 
 # SetupWizard configuration
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -210,7 +212,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Pixel customization
 TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
 TARGET_INCLUDE_STOCK_ARCORE ?= true
-TARGET_INCLUDE_LIVE_WALLPAPERS ?= false
+TARGET_INCLUDE_LIVE_WALLPAPERS ?= true
 ifeq ($(TARGET_INCLUDE_LIVE_WALLPAPERS),true)
 PRODUCT_PACKAGES += \
     PixelLiveWallpapersOverlay
